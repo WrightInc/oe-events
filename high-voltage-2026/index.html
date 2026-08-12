@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>The High Voltage Open 2026 | OE Utility Services</title>
+<meta name="description" content="OE Utility Services welcomes participants to The High Voltage Open, Friday, August 21, 2026 at The Quarry Golf Club. Enter the OE Chipping Contest."/>
+<link rel="canonical" href="https://events.oeservices.ca/high-voltage-2026/"/>
+<link href="/favicon.ico" rel="icon" sizes="any"/>
+<link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<style>
+:root{
+  --navy:#0F2670; --navy-d:#0A1B4D; --blue:#01ABEE; --blue-10:#E6F7FD;
+  --green:#029449; --gold:#EAB043;
+  --ink:#13203B; --grey:#54607A; --line:#DCE3EE; --paper:#FFFFFF; --mist:#F3F7FC;
+  --fh:"Diodrum Rounded","Nunito",system-ui,sans-serif;
+  --fb:"Inter","Helvetica Neue",Arial,sans-serif;
+  --maxw:1120px;
+}
+@font-face{font-family:'Diodrum Rounded';src:url('/assets/fonts/DiodrumRounded-Regular.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:'Diodrum Rounded';src:url('/assets/fonts/DiodrumRounded-Medium.woff2') format('woff2');font-weight:500;font-display:swap}
+@font-face{font-family:'Diodrum Rounded';src:url('/assets/fonts/DiodrumRounded-Semibold.woff2') format('woff2');font-weight:600;font-display:swap}
+@font-face{font-family:'Diodrum Rounded';src:url('/assets/fonts/DiodrumRounded-Bold.woff2') format('woff2');font-weight:700;font-display:swap}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--fb);color:var(--ink);background:var(--paper);line-height:1.68;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4,.fh{font-family:var(--fh);font-weight:700;line-height:1.16;letter-spacing:-.01em}
+a{color:var(--blue);text-decoration:none}
+img{max-width:100%;display:block}
+p{margin-bottom:1.05rem}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 26px}
+section{padding:84px 0}
+h2{font-size:clamp(1.8rem,3.4vw,2.6rem);color:var(--navy)}
+
+header.brand{background:#fff;border-bottom:1px solid var(--line)}
+.brand-in{max-width:var(--maxw);margin:0 auto;padding:18px 26px}
+.brand-in img{height:52px;width:auto}
+
+.breadcrumbs{background:var(--mist);border-bottom:1px solid var(--line)}
+.breadcrumbs-inner{max-width:var(--maxw);margin:0 auto;padding:12px 26px;font-size:13px;color:var(--grey)}
+.breadcrumbs a{color:var(--navy);font-weight:600}
+.breadcrumbs a:hover{color:var(--blue)}
+.breadcrumbs .sep{margin:0 8px;color:var(--line)}
+.breadcrumbs .current{color:var(--grey);font-weight:600}
+
+/* hero */
+.hero{position:relative;color:#fff;overflow:hidden;background:var(--navy);padding:0}
+.hero:before{content:"";position:absolute;inset:0;z-index:1;
+  background:radial-gradient(1100px 520px at 82% 18%,rgba(1,171,238,.30) 0%,rgba(1,171,238,0) 62%)}
+.hero:after{content:"";position:absolute;right:-140px;bottom:-190px;width:560px;height:560px;z-index:1;
+  border-radius:50%;border:70px solid rgba(255,255,255,.045)}
+.hero .wrap{position:relative;z-index:3;padding-top:74px;padding-bottom:78px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .85fr;gap:56px;align-items:center}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:36px}}
+
+.tagrow{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.tag-pill{background:var(--blue);color:#fff;font-family:var(--fh);font-weight:700;
+  font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:9px 17px;border-radius:5px}
+.tag-pill.gold{background:var(--gold);color:var(--navy)}
+
+.hero .kicker{font-family:var(--fh);font-weight:800;font-size:clamp(2.4rem,5vw,3.5rem);
+  line-height:1.05;letter-spacing:-.03em;padding-left:20px;border-left:6px solid var(--blue);margin-bottom:22px}
+.hero .kicker span{color:var(--blue)}
+.hero h1{font-size:clamp(1.5rem,2.7vw,2.05rem);font-weight:800;letter-spacing:-.02em;margin-bottom:20px}
+.hero .lede{font-size:1.08rem;color:#DCE7F5;max-width:34em;margin-bottom:32px}
+
+.hero-cards{display:flex;flex-direction:column;gap:16px}
+.fact{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);
+  border-left:4px solid var(--blue);border-radius:9px;padding:18px 22px}
+.fact .fl{font-family:var(--fh);font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;
+  color:#9FC2E8;margin-bottom:5px}
+.fact .fv{font-family:var(--fh);font-weight:700;font-size:1.16rem;color:#fff}
+
+.btn{display:inline-block;font-family:var(--fh);font-weight:800;font-size:.95rem;
+  letter-spacing:.03em;padding:16px 30px;border-radius:7px;transition:transform .15s,box-shadow .15s}
+.btn-blue{background:var(--blue);color:#fff;box-shadow:0 5px 18px rgba(1,171,238,.32)}
+.btn-blue:hover{transform:translateY(-2px);box-shadow:0 9px 26px rgba(1,171,238,.42)}
+.btn-ghost{border:1px solid rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btnrow{display:flex;flex-wrap:wrap;gap:14px}
+
+.band-tint{background:var(--mist)}
+.band-navy{background:var(--navy);color:#fff}
+.band-navy h2{color:#fff}
+
+.eyebrow{font-family:var(--fh);font-weight:600;font-size:.73rem;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--blue);margin-bottom:13px}
+
+/* welcome */
+.welcome-head{display:grid;grid-template-columns:.85fr 1.15fr;gap:52px;align-items:start}
+@media(max-width:860px){.welcome-head{grid-template-columns:1fr;gap:20px}}
+.welcome-head h2{margin:0}
+.welcome-lede p{font-size:1.06rem;color:#374764}
+.welcome-lede p:last-child{margin-bottom:0}
+
+/* partner strip */
+.venue{padding:56px 0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.venue-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+@media(max-width:860px){.venue-grid{grid-template-columns:1fr}}
+.vcard{display:grid;grid-template-columns:auto 1fr;gap:26px;align-items:center;
+  background:var(--mist);border:1px solid var(--line);border-radius:16px;padding:26px 28px}
+@media(max-width:480px){.vcard{grid-template-columns:1fr;justify-items:center;text-align:center}}
+.venue-mark{background:var(--navy);border-radius:12px;padding:16px 20px;
+  display:flex;align-items:center;justify-content:center;min-width:120px}
+.venue-mark img{height:86px;width:auto}
+.vlabel{font-family:var(--fh);font-weight:600;font-size:.68rem;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--blue);margin-bottom:6px}
+.venue-copy h3{font-size:1.22rem;color:var(--navy);margin:0 0 7px}
+.venue-copy p{margin:0 0 10px;color:var(--grey);font-size:.95rem;line-height:1.6}
+.venue-copy a{font-family:var(--fh);font-weight:700;font-size:.92rem}
+
+/* prizes */
+.prizes{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:820px){.prizes{grid-template-columns:1fr}}
+.prize{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px 28px;
+  border-top:6px solid var(--ac)}
+.prize.p1{--ac:var(--gold)}
+.prize.p2{--ac:var(--blue)}
+.prize.p3{--ac:var(--navy)}
+.pmedal{font-family:var(--fh);font-weight:800;font-size:2.1rem;color:var(--ac);
+  line-height:1;margin-bottom:18px;letter-spacing:-.02em}
+.prize.p1 .pmedal{color:#b8830d}
+.prize ul{list-style:none;margin:0;padding:0}
+.prize li{position:relative;padding-left:22px;margin-bottom:11px;color:var(--grey);font-size:1rem}
+.prize li:last-child{margin-bottom:0}
+.prize li:before{content:"";position:absolute;left:0;top:.62em;width:9px;height:9px;
+  border-radius:50%;background:var(--ac)}
+.prize.p1 li:before{background:var(--gold)}
+
+/* course map */
+.mapcard{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.maphead{padding:32px 34px 26px}
+.maphead h2{margin-bottom:10px}
+.maphead p{margin:0;color:var(--grey);max-width:46em}
+.mapcard img{width:100%;height:auto;display:block;border-top:1px solid var(--line)}
+@media(max-width:640px){.maphead{padding:26px 22px 20px}}
+
+/* form */
+.form-band{background:var(--mist)}
+.form-shell{max-width:760px;margin:0 auto;background:#fff;border:1px solid var(--line);
+  border-radius:16px;padding:44px 42px}
+@media(max-width:640px){.form-shell{padding:30px 24px}}
+.form-shell .fh-head{text-align:center;margin-bottom:34px}
+.form-shell .fh-head h2{font-size:clamp(1.6rem,3vw,2.1rem);margin-bottom:8px}
+.form-shell .fh-head p{color:var(--grey);margin:0}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:640px){.form-grid{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column}
+.field.full{grid-column:1/-1}
+.field label{font-family:var(--fh);font-weight:600;font-size:.82rem;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--navy);margin-bottom:7px}
+.field .req{color:var(--blue)}
+.field input,.field textarea{font-family:var(--fb);font-size:1rem;color:var(--ink);
+  border:1px solid var(--line);border-radius:8px;padding:13px 14px;background:#fff;
+  transition:border-color .18s,box-shadow .18s;width:100%}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--blue);
+  box-shadow:0 0 0 3px rgba(1,171,238,.16)}
+.field textarea{resize:vertical;min-height:96px}
+.field .hint{font-size:.82rem;color:var(--grey);margin-top:6px}
+
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.field .chip{margin-bottom:0;text-transform:none;letter-spacing:normal;font-family:var(--fb);
+  font-weight:400;font-size:1rem;color:inherit}
+.chip input{position:absolute;opacity:0;width:0;height:0}
+.chip span{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:999px;
+  padding:10px 17px;font-size:.94rem;color:var(--grey);cursor:pointer;
+  transition:background .15s,border-color .15s,color .15s;user-select:none}
+.chip span:hover{border-color:var(--blue);color:var(--navy)}
+.chip input:checked + span{background:var(--blue);border-color:var(--blue);color:#fff;font-weight:600}
+.chip input:focus-visible + span{box-shadow:0 0 0 3px rgba(1,171,238,.3)}
+
+.entry-terms{background:var(--mist);border-left:4px solid var(--blue);border-radius:10px;
+  padding:16px 20px;font-size:.94rem;color:var(--grey);line-height:1.6;margin:0 0 28px}
+
+.form-submit{margin-top:28px}
+.form-submit button{width:100%;border:none;cursor:pointer;font-family:var(--fh);font-weight:800;
+  font-size:1rem;letter-spacing:.03em;padding:17px 30px;border-radius:8px;background:var(--blue);
+  color:#fff;transition:transform .15s,box-shadow .15s}
+.form-submit button:hover:not(:disabled){transform:translateY(-2px);box-shadow:0 9px 26px rgba(1,171,238,.4)}
+.form-submit button:disabled{opacity:.55;cursor:not-allowed}
+.form-msg{margin-top:18px;padding:15px 18px;border-radius:9px;font-size:.95rem;display:none}
+.form-msg.ok{display:block;background:#E9F4EE;border:1px solid var(--green);color:#0B6B39}
+.form-msg.err{display:block;background:#FDECEC;border:1px solid #C0392B;color:#96271A}
+.form-legal{font-size:.82rem;color:var(--grey);margin:16px 0 0;text-align:center}
+.hp{position:absolute;left:-9999px}
+
+/* hydration */
+.hydration{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+@media(max-width:860px){.hydration{grid-template-columns:1fr;gap:30px}}
+.hydration h2{color:#fff;margin-bottom:16px}
+.hydration h2 span{color:var(--blue)}
+.hydration p{color:#C9DCF2;margin:0;font-size:1.05rem}
+.drop{width:104px;height:auto;margin-bottom:22px}
+
+/* tournament */
+.tcards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-bottom:36px}
+@media(max-width:760px){.tcards{grid-template-columns:1fr}}
+.tcard{background:#fff;border:1px solid var(--line);border-left:4px solid var(--blue);
+  border-radius:14px;padding:26px 28px}
+.tcard h3{font-size:1.1rem;color:var(--navy);margin-bottom:7px}
+.tcard p{color:var(--grey);font-size:.97rem;margin:0}
+
+.charity{background:var(--blue-10);border:1px solid #BFE7F8;border-radius:16px;
+  padding:30px 34px;display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center}
+@media(max-width:760px){.charity{grid-template-columns:1fr;gap:22px;text-align:center;justify-items:center}}
+.charity-mark img{width:230px;height:auto}
+@media(max-width:760px){.charity-mark img{width:190px}}
+.charity h3{font-size:1.28rem;color:var(--navy);margin-bottom:8px}
+.charity p{color:#374764;margin:0;max-width:44em}
+
+.closing{background:var(--navy);color:#fff;padding:88px 0;text-align:center}
+.closing h2{color:#fff;margin-bottom:14px}
+.closing p{color:#C9DCF2;max-width:38em;margin:0 auto 30px}
+
+footer{background:var(--navy-d);color:#fff}
+.footer-body{max-width:var(--maxw);margin:0 auto;padding:56px 26px 32px;
+  display:flex;flex-wrap:wrap;gap:36px;justify-content:space-between;align-items:flex-start}
+.footer-logo img{height:56px;margin-bottom:16px}
+.footer-tagline{font-size:14px;line-height:1.6;opacity:.82;max-width:340px}
+.footer-tagline-cta{color:var(--blue)}
+.footer-social{display:flex;gap:12px;margin-top:18px}
+.footer-social a{width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.1);
+  display:flex;align-items:center;justify-content:center;color:#fff;transition:background .2s}
+.footer-social a:hover{background:var(--blue)}
+.footer-col h3{font-family:var(--fh);font-size:.76rem;letter-spacing:.16em;text-transform:uppercase;
+  color:#8FB4DC;margin-bottom:14px}
+.footer-col ul{list-style:none}
+.footer-col li{margin-bottom:9px;font-size:14px}
+.footer-col a{color:#fff;opacity:.85}
+.footer-col a:hover{opacity:1;color:var(--blue)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.12);padding:20px 26px;max-width:var(--maxw);
+  margin:0 auto;text-align:center;font-size:13px;opacity:.7}
+.footer-bottom a{color:#fff}
+</style>
+</head>
+<body>
+
+<header class="brand">
+  <div class="brand-in">
+    <a href="https://www.oeservices.ca" aria-label="OE Utility Services">
+      <img src="/assets/logos/OE_logo_30th_RGB_col.png" alt="OE Utility Services"/>
+    </a>
+  </div>
+</header>
+
+<div class="breadcrumbs">
+  <div class="breadcrumbs-inner">
+    <a href="https://www.oeservices.ca">Home</a>
+    <span class="sep">&#8250;</span>
+    <a href="/">Events</a>
+    <span class="sep">&#8250;</span>
+    <span class="current">The High Voltage Open 2026</span>
+  </div>
+</div>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="tagrow">
+          <span class="tag-pill">Event Sponsor</span>
+          <span class="tag-pill gold">30 Years Strong</span>
+        </div>
+        <div class="kicker">Welcome to<br/><span>The High Voltage Open</span></div>
+        <h1>OE Utility Services is proud to be the Event Sponsor.</h1>
+        <p class="lede">Find us on the course at the Chipping Contest and the Hydration Station. Enter before you play &mdash; it takes only a moment.</p>
+        <div class="btnrow">
+          <a class="btn btn-blue" href="#enter">Enter the Chipping Contest &#8594;</a>
+          <a class="btn btn-ghost" href="#contest">See the prizes</a>
+        </div>
+      </div>
+      <div class="hero-cards">
+        <div class="fact"><div class="fl">Date</div><div class="fv">Friday, August 21, 2026</div></div>
+        <div class="fact"><div class="fl">Start</div><div class="fv">1:00 PM Shotgun</div></div>
+        <div class="fact"><div class="fl">Course</div><div class="fv">The Quarry Golf Club</div></div>
+        <div class="fact"><div class="fl">Format</div><div class="fv">4-Man Scramble</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="welcome-head">
+      <div>
+        <div class="eyebrow">Welcome</div>
+        <h2>Good to see you out here.</h2>
+      </div>
+      <div class="welcome-lede">
+        <p>OE Utility Services has spent 30 years working across Ontario alongside many of the people on this course today &mdash; contractors, suppliers, utility crews, and the Customers who keep the work coming.</p>
+        <p>A day like this is the easiest way to put names to faces. Come find our team at the Chipping Contest, grab something cold at the Hydration Station, and give the targets a go.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="venue">
+  <div class="wrap">
+    <div class="venue-grid">
+      <div class="vcard">
+        <div class="venue-mark"><img src="/assets/logos/black-maple-athletics.png" alt="Black Maple Athletics"/></div>
+        <div class="venue-copy">
+          <div class="vlabel">Presented by</div>
+          <h3>Black Maple Athletics</h3>
+          <p>Organisers of The High Voltage Open, a tournament built for Ontario&rsquo;s high voltage electrical industry.</p>
+          <a href="https://www.blackmapleathletics.ca/high-voltage-open" rel="noopener" target="_blank">blackmapleathletics.ca &#8594;</a>
+        </div>
+      </div>
+      <div class="vcard">
+        <div class="venue-mark"><img src="/assets/logos/quarry-golf-club.png" alt="The Quarry Golf Club"/></div>
+        <div class="venue-copy">
+          <div class="vlabel">Host course</div>
+          <h3>The Quarry Golf Club</h3>
+          <p>Friday, August 21, 2026<br/>1:00 PM Shotgun Start</p>
+          <a href="https://quarrygolf.ca/" rel="noopener" target="_blank">quarrygolf.ca &#8594;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="contest" class="band-tint">
+  <div class="wrap">
+    <div class="eyebrow">OE Utility Services Chipping Contest</div>
+    <h2 style="margin-bottom:14px">Hit the target and get a raffle ticket.</h2>
+    <p style="max-width:44em;color:#374764;font-size:1.05rem;margin-bottom:44px">Fill in the form below, then come to the OE tent to collect your raffle ticket and take your shot. Winners are drawn at the event.</p>
+
+    <div class="prizes">
+      <div class="prize p1">
+        <div class="pmedal">1st</div>
+        <ul>
+          <li>Bushnell HD speaker</li>
+          <li>Oban 14 Year Scotch</li>
+          <li>Box of golf balls</li>
+          <li>$100 LCBO gift card</li>
+        </ul>
+      </div>
+      <div class="prize p2">
+        <div class="pmedal">2nd</div>
+        <ul>
+          <li>Bushnell HD speaker</li>
+          <li>Bottle of red wine</li>
+          <li>Box of golf balls</li>
+          <li>$100 LCBO gift card</li>
+        </ul>
+      </div>
+      <div class="prize p3">
+        <div class="pmedal">3rd</div>
+        <ul>
+          <li>Bushnell HD speaker</li>
+          <li>Bottle of red wine</li>
+          <li>Box of golf balls</li>
+          <li>$100 LCBO gift card</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-tint" style="padding-top:0">
+  <div class="wrap">
+    <div class="mapcard">
+      <div class="maphead">
+        <div class="eyebrow">Find us on the course</div>
+        <h2>Look for the OE tent</h2>
+        <p>The Chipping Contest and the Hydration Station are both at the OE tent, between the pond and the cart path.</p>
+      </div>
+      <img src="/assets/oe-tent-location.jpg" alt="Aerial view of The Quarry Golf Club with the OE Utility Services tent location marked"/>
+    </div>
+  </div>
+</section>
+
+<section id="enter" class="form-band" style="padding-top:0">
+  <div class="wrap">
+    <div class="form-shell">
+      <div class="fh-head">
+        <div class="eyebrow">Enter Here</div>
+        <h2>Chipping Contest Entry</h2>
+        <p>One entry per participant. Under a minute to fill in.</p>
+      </div>
+
+      <p class="entry-terms">By entering, you agree to receive our email newsletters and consent to the public announcement of the winner&rsquo;s name and photo.</p>
+
+      <form id="entryForm" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="firstname">First Name <span class="req">*</span></label>
+            <input id="firstname" name="firstname" type="text" autocomplete="given-name" required/>
+          </div>
+          <div class="field">
+            <label for="lastname">Last Name <span class="req">*</span></label>
+            <input id="lastname" name="lastname" type="text" autocomplete="family-name" required/>
+          </div>
+          <div class="field">
+            <label for="company">Company <span class="req">*</span></label>
+            <input id="company" name="company" type="text" autocomplete="organization" required/>
+          </div>
+          <div class="field">
+            <label for="jobtitle">Title / Position</label>
+            <input id="jobtitle" name="jobtitle" type="text" autocomplete="organization-title"/>
+          </div>
+          <div class="field">
+            <label for="email">Email <span class="req">*</span></label>
+            <input id="email" name="email" type="email" autocomplete="email" required/>
+          </div>
+          <div class="field">
+            <label for="mobilephone">Mobile Phone <span class="req">*</span></label>
+            <input id="mobilephone" name="mobilephone" type="tel" autocomplete="tel" required/>
+            <div class="hint">So we can reach you if you win.</div>
+          </div>
+
+          <div class="field full">
+            <label>Services you would like to hear about</label>
+            <div class="chips" data-group="services_required">
+              <label class="chip"><input type="checkbox" value="Hydro Excavation"/><span>Hydrovac Excavation</span></label>
+              <label class="chip"><input type="checkbox" value="Water Distribution"/><span>Water Distribution</span></label>
+              <label class="chip"><input type="checkbox" value="Gas Distribution"/><span>Gas Distribution</span></label>
+              <label class="chip"><input type="checkbox" value="Restoration"/><span>Restoration</span></label>
+              <label class="chip"><input type="checkbox" value="Soil Recycling"/><span>Soil Recycling</span></label>
+              <label class="chip"><input type="checkbox" value="NOT APPLICABLE"/><span>Not applicable</span></label>
+            </div>
+          </div>
+
+          <div class="field full">
+            <label>Equipment you would like to hear about</label>
+            <div class="chips" data-group="other_equipment">
+              <label class="chip"><input type="checkbox" value="Concrete &amp; road saws"/><span>Concrete &amp; road saws</span></label>
+              <label class="chip"><input type="checkbox" value="Float trailers"/><span>Float trailers</span></label>
+              <label class="chip"><input type="checkbox" value="Back-hoes/mini-ex"/><span>Back-hoes / mini-ex</span></label>
+              <label class="chip"><input type="checkbox" value="Coring machine"/><span>Coring machine</span></label>
+              <label class="chip"><input type="checkbox" value="Dump trucks"/><span>Dump trucks</span></label>
+              <label class="chip"><input type="checkbox" value="U-fill trucks"/><span>U-Fill trucks</span></label>
+              <label class="chip"><input type="checkbox" value="Stone slingers"/><span>Stone slingers</span></label>
+              <label class="chip"><input type="checkbox" value="Asphalt truck"/><span>Asphalt truck</span></label>
+              <label class="chip"><input type="checkbox" value="Skid-steer"/><span>Skid-steer</span></label>
+              <label class="chip"><input type="checkbox" value="NOT APPLICABLE"/><span>Not applicable</span></label>
+            </div>
+          </div>
+
+          <div class="field full">
+            <label for="notes">Anything you would like us to know</label>
+            <textarea id="notes" name="notes" placeholder="Optional"></textarea>
+          </div>
+
+        </div>
+
+        <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+
+        <div class="form-submit">
+          <button id="submitBtn" type="submit">Enter the Chipping Contest</button>
+        </div>
+        <div class="form-msg" id="formMsg" role="status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="band-navy">
+  <div class="wrap">
+    <div class="hydration">
+      <div>
+        <svg class="drop" viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M50 4 C50 4 12 54 12 84 a38 38 0 0 0 76 0 C88 54 50 4 50 4 Z" fill="#01ABEE"/>
+        </svg>
+        <div class="eyebrow" style="color:#8FC4E8">Fuel up before you tee off</div>
+        <h2>Stay hydrated. Stay fuelled.<br/><span>Dig your best game.</span></h2>
+      </div>
+      <div>
+        <p>The OE Hydration Station is stocked and open all afternoon. Water, cold drinks, and somewhere to stand in the shade for a minute. Help yourself &mdash; compliments of OE Utility Services.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="eyebrow">The Tournament</div>
+    <h2 style="margin-bottom:36px">What the day looks like</h2>
+    <div class="tcards">
+      <div class="tcard">
+        <h3>144+ industry professionals</h3>
+        <p>Contractors, utility workers, suppliers, and decision makers from across Ontario's high voltage electrical sector.</p>
+      </div>
+      <div class="tcard">
+        <h3>4-man scramble</h3>
+        <p>A team format built for a relaxed, competitive round. Shotgun start at 1:00 PM.</p>
+      </div>
+      <div class="tcard">
+        <h3>Lunch and dinner</h3>
+        <p>Food is included as part of the tournament, along with tournament gifts and merchandise.</p>
+      </div>
+      <div class="tcard">
+        <h3>Prizes and on-course contests</h3>
+        <p>Contest prizes, giveaways, and tournament awards &mdash; including the OE Chipping Contest draw.</p>
+      </div>
+    </div>
+
+    <div class="charity">
+      <div class="charity-mark">
+        <img src="/assets/logos/down-syndrome-foundation.png" alt="Down Syndrome Foundation of Canada"/>
+      </div>
+      <div class="charity-copy">
+        <h3>Giving back</h3>
+        <p>All proceeds from The High Voltage Open are donated to the <a href="https://www.downsyndromefoundation.ca/" rel="noopener" target="_blank">Down Syndrome Foundation of Canada</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap">
+    <h2>Come say hello.</h2>
+    <p>Our team is on the course all afternoon. Ask us anything &mdash; hydrovac excavation, subsurface utility engineering, restoration, traffic control, soil recycling, or U-Fill.</p>
+    <div class="btnrow" style="justify-content:center">
+      <a class="btn btn-blue" href="#enter">Enter the Chipping Contest &#8594;</a>
+      <a class="btn btn-ghost" href="https://www.blackmapleathletics.ca/high-voltage-open" rel="noopener" target="_blank">Tournament website</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-body">
+    <div>
+      <div class="footer-logo">
+        <img src="/assets/logos/OE_logo_30th_RGB_rev.png" alt="OE Utility Services"/>
+      </div>
+      <p class="footer-tagline">
+        Integrated utility infrastructure services across Ontario for 30 years. One call. One team.<br/>
+        <strong class="footer-tagline-cta">GET MORE OUT.</strong>
+      </p>
+      <div class="footer-social">
+        <a aria-label="OE Utility Services on LinkedIn" href="https://www.linkedin.com/company/ontario-excavac/" rel="noopener" target="_blank">
+          <svg aria-hidden="true" fill="currentColor" height="17" viewBox="0 0 24 24" width="17"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"></path></svg>
+        </a>
+        <a aria-label="OE Utility Services on Facebook" href="https://www.facebook.com/oeutilityservices/" rel="noopener" target="_blank">
+          <svg aria-hidden="true" fill="currentColor" height="17" viewBox="0 0 24 24" width="17"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"></path></svg>
+        </a>
+        <a aria-label="OE Utility Services on YouTube" href="https://www.youtube.com/@oeservices" rel="noopener" target="_blank">
+          <svg aria-hidden="true" fill="currentColor" height="17" viewBox="0 0 24 24" width="17"><path d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.08 0 12 0 12s0 3.92.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.92 24 12 24 12s0-3.92-.5-5.81zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z"></path></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h3>Events</h3>
+      <ul>
+        <li><a href="tel:4167490005">416.749.0005</a></li>
+        <li><a href="mailto:sales@oeservices.ca">sales@oeservices.ca</a></li>
+        <li><a href="https://www.oeservices.ca">oeservices.ca</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 OE Utility Services. All Rights Reserved. &nbsp;·&nbsp;
+    <a href="https://www.oeservices.ca/privacy-policy">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="https://www.oeservices.ca/accessibility">Accessibility</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var PORTAL='9269567';
+  var FORM='19892c93-ef6d-47cd-b841-b2657670e5fb';
+  var ENDPOINT='https://api.hsforms.com/submissions/v3/integration/submit/'+PORTAL+'/'+FORM;
+
+  var form=document.getElementById('entryForm');
+  var btn=document.getElementById('submitBtn');
+  var msg=document.getElementById('formMsg');
+
+  function show(t,k){ msg.textContent=t; msg.className='form-msg '+k; }
+
+  function chipValues(group){
+    var box=document.querySelector('.chips[data-group="'+group+'"]');
+    if(!box) return '';
+    return Array.prototype.slice.call(box.querySelectorAll('input:checked'))
+      .map(function(i){return i.value;}).join(';');
+  }
+
+  function noteText(){
+    var n=document.getElementById('notes').value.trim();
+    var stamp='[The High Voltage Open 2026 — OE Chipping Contest entry]';
+    return n ? (n + '\n\n' + stamp) : stamp;
+  }
+
+  function cookie(name){
+    var m=document.cookie.match('(^|;)\\s*'+name+'\\s*=\\s*([^;]+)');
+    return m ? m.pop() : '';
+  }
+
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(form.website.value){ return; }
+
+    var required=['firstname','lastname','company','email','mobilephone'];
+    for(var i=0;i<required.length;i++){
+      var el=document.getElementById(required[i]);
+      if(!el.value.trim()){
+        show('Please fill in every field marked with an asterisk.','err');
+        el.focus(); return;
+      }
+    }
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(document.getElementById('email').value)){
+      show('Please check the email address.','err');
+      document.getElementById('email').focus(); return;
+    }
+
+    var fields=[
+      {name:'firstname',   value:document.getElementById('firstname').value.trim()},
+      {name:'lastname',    value:document.getElementById('lastname').value.trim()},
+      {name:'company',     value:document.getElementById('company').value.trim()},
+      {name:'jobtitle',    value:document.getElementById('jobtitle').value.trim()},
+      {name:'email',       value:document.getElementById('email').value.trim()},
+      {name:'mobilephone', value:document.getElementById('mobilephone').value.trim()},
+      {name:'services_required', value:chipValues('services_required')},
+      {name:'other_equipment',   value:chipValues('other_equipment')},
+      {name:'notes',       value:noteText()}
+    ].filter(function(f){ return f.value!==''; });
+
+    var payload={
+      fields:fields,
+      context:{
+        pageUri:window.location.href,
+        pageName:'The High Voltage Open 2026 — Chipping Contest Entry'
+      },
+      legalConsentOptions:{
+        consent:{
+          consentToProcess:true,
+          text:'I agree to OE Utility Services storing and processing my personal data to administer the Chipping Contest.'
+        }
+      }
+    };
+    var hutk=cookie('hubspotutk');
+    if(hutk){ payload.context.hutk=hutk; }
+
+    btn.disabled=true; btn.textContent='Entering…';
+
+    fetch(ENDPOINT,{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(payload)
+    })
+    .then(function(r){ return r.json().then(function(d){ return {ok:r.ok,data:d}; }); })
+    .then(function(res){
+      if(res.ok){
+        form.querySelector('.form-grid').style.display='none';
+        form.querySelector('.form-submit').style.display='none';
+        show('You are in. Come to the OE tent to collect your raffle ticket and take your shot — good luck out there.','ok');
+      } else {
+        btn.disabled=false; btn.textContent='Enter the Chipping Contest';
+        show('Something went wrong. Please try again, or enter in person at the OE tent.','err');
+      }
+    })
+    .catch(function(){
+      btn.disabled=false; btn.textContent='Enter the Chipping Contest';
+      show('Something went wrong. Please try again, or enter in person at the OE tent.','err');
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
