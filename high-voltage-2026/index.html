@@ -188,9 +188,16 @@ header.brand{background:#fff;border-bottom:1px solid var(--line)}
 .hp{position:absolute;left:-9999px}
 
 /* hydration */
-.hydration{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
-@media(max-width:860px){.hydration{grid-template-columns:1fr;gap:30px}}
-.hydration h2{color:#fff;margin-bottom:16px}
+.hydration{display:grid;grid-template-columns:1fr 1fr;column-gap:52px;row-gap:0;align-items:start}
+.hyd-top{grid-column:1;grid-row:1}
+.hyd-head{grid-column:1;grid-row:2}
+.hyd-copy{grid-column:2;grid-row:2}
+@media(max-width:860px){
+  .hydration{grid-template-columns:1fr;row-gap:22px}
+  .hyd-top,.hyd-head,.hyd-copy{grid-column:1}
+  .hyd-top{grid-row:1}.hyd-head{grid-row:2}.hyd-copy{grid-row:3}
+}
+.hydration h2{color:#fff;margin:0}
 .hydration h2 span{color:var(--blue)}
 .hydration p{color:#C9DCF2;margin:0;font-size:1.05rem}
 .drop{width:104px;height:auto;margin-bottom:22px}
@@ -461,14 +468,16 @@ footer{background:var(--navy-d);color:#fff}
 <section class="band-navy">
   <div class="wrap">
     <div class="hydration">
-      <div>
+      <div class="hyd-top">
         <svg class="drop" viewBox="0 0 100 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M50 4 C50 4 12 54 12 84 a38 38 0 0 0 76 0 C88 54 50 4 50 4 Z" fill="#01ABEE"/>
         </svg>
         <div class="eyebrow" style="color:#8FC4E8">Fuel up before you tee off</div>
+      </div>
+      <div class="hyd-head">
         <h2>Stay hydrated. Stay fuelled.<br/><span>Dig your best game.</span></h2>
       </div>
-      <div>
+      <div class="hyd-copy">
         <p>The OE Hydration Station is stocked and open all afternoon. Water, cold drinks, and somewhere to stand in the shade for a minute. Help yourself &mdash; compliments of OE Utility Services.</p>
       </div>
     </div>
