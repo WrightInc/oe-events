@@ -276,7 +276,7 @@ footer{background:var(--navy-d);color:#fff}
         <p class="lede">Find us on the course at the Chipping Contest and the Hydration Station. Enter before you play &mdash; it takes only a moment.</p>
         <div class="btnrow">
           <a class="btn btn-blue" href="#enter">Enter the Chipping Contest &#8594;</a>
-          <a class="btn btn-ghost" href="#contest">See the prizes</a>
+          <span class="btn btn-ghost">Fun &amp; Prizes</span>
         </div>
       </div>
       <div class="hero-cards">
@@ -329,51 +329,13 @@ footer{background:var(--navy-d);color:#fff}
   </div>
 </div>
 
-<section id="contest" class="band-tint">
-  <div class="wrap">
-    <div class="eyebrow">OE Utility Services Chipping Contest</div>
-    <h2 style="margin-bottom:14px">Hit the target and get a raffle ticket.</h2>
-    <p style="max-width:44em;color:#374764;font-size:1.05rem;margin-bottom:44px">Fill in the form below, then come to the OE tent to collect your raffle ticket and take your shot. Winners are drawn at the event.</p>
-
-    <div class="prizes">
-      <div class="prize p1">
-        <div class="pmedal">1st</div>
-        <ul>
-          <li>Bushnell HD speaker</li>
-          <li>Oban 14 Year Scotch</li>
-          <li>Box of golf balls</li>
-          <li>$100 LCBO gift card</li>
-        </ul>
-      </div>
-      <div class="prize p2">
-        <div class="pmedal">2nd</div>
-        <ul>
-          <li>Bushnell HD speaker</li>
-          <li>Bottle of red wine</li>
-          <li>Box of golf balls</li>
-          <li>$100 LCBO gift card</li>
-        </ul>
-      </div>
-      <div class="prize p3">
-        <div class="pmedal">3rd</div>
-        <ul>
-          <li>Bushnell HD speaker</li>
-          <li>Bottle of red wine</li>
-          <li>Box of golf balls</li>
-          <li>$100 LCBO gift card</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="band-tint" style="padding-top:0">
+<section class="band-tint">
   <div class="wrap">
     <div class="mapcard">
       <div class="maphead">
         <div class="eyebrow">Find us on the course</div>
         <h2>Look for the OE tent</h2>
-        <p>The Chipping Contest and the Hydration Station are both at the OE tent, between the pond and the cart path.</p>
+        <p>You&rsquo;ll find us between the pond and the cart path. Don&rsquo;t forget to sign up to be eligible for a prize.</p>
       </div>
       <img src="/assets/oe-tent-location.jpg" alt="Aerial view of The Quarry Golf Club with the OE Utility Services tent location marked"/>
     </div>
@@ -478,7 +440,7 @@ footer{background:var(--navy-d);color:#fff}
         <h2>Stay hydrated. Stay fuelled.<br/><span>Dig your best game.</span></h2>
       </div>
       <div class="hyd-copy">
-        <p>The OE Hydration Station is stocked and open all afternoon. Water, cold drinks, and somewhere to stand in the shade for a minute. Help yourself &mdash; compliments of OE Utility Services.</p>
+        <p>Look for the Hydration Station poster to grab a drink. Help yourself &mdash; compliments of OE Utility Services.</p>
       </div>
     </div>
   </div>
@@ -655,7 +617,7 @@ footer{background:var(--navy-d);color:#fff}
       if(res.ok){
         form.querySelector('.form-grid').style.display='none';
         form.querySelector('.form-submit').style.display='none';
-        show('You are in. Come to the OE tent to collect your raffle ticket and take your shot — good luck out there.','ok');
+        show('Thanks for signing up. Here&rsquo;s to a great event!','ok');
       } else {
         btn.disabled=false; btn.textContent='Enter the Chipping Contest';
         show('Something went wrong. Please try again, or enter in person at the OE tent.','err');
