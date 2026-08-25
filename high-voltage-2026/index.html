@@ -4,7 +4,7 @@
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>The High Voltage Open 2026 | OE Utility Services</title>
-<meta name="description" content="OE Utility Services welcomes participants to The High Voltage Open, Friday, August 21, 2026 at The Quarry Golf Club. Enter the OE Chipping Contest."/>
+<meta name="description" content="Thank you to everyone who joined OE Utility Services at The High Voltage Open, Friday, August 21, 2026 at The Quarry Golf Club. See the photos from the day."/>
 <link rel="canonical" href="https://events.oeservices.ca/high-voltage-2026/"/>
 <link href="/favicon.ico" rel="icon" sizes="any"/>
 <link href="/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -218,6 +218,26 @@ header.brand{background:#fff;border-bottom:1px solid var(--line)}
 .charity h3{font-size:1.28rem;color:var(--navy);margin-bottom:8px}
 .charity p{color:#374764;margin:0;max-width:44em}
 
+/* gallery */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+@media(max-width:900px){.gallery{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.gallery{grid-template-columns:repeat(2,1fr);gap:10px}}
+.gallery a{display:block;border-radius:12px;overflow:hidden;background:var(--mist);
+  border:1px solid var(--line);aspect-ratio:1/1;cursor:zoom-in}
+.gallery img{width:100%;height:100%;object-fit:cover;display:block;
+  transition:transform .35s ease}
+.gallery a:hover img{transform:scale(1.05)}
+.lb{position:fixed;inset:0;background:rgba(10,27,77,.94);display:none;
+  align-items:center;justify-content:center;z-index:999;padding:24px}
+.lb.open{display:flex}
+.lb img{max-width:92vw;max-height:88vh;border-radius:10px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.lb button{position:absolute;background:none;border:none;color:#fff;cursor:pointer;
+  font-size:2.4rem;line-height:1;padding:12px;font-family:var(--fh)}
+.lb .x{top:14px;right:20px}
+.lb .prev{left:10px;top:50%;transform:translateY(-50%)}
+.lb .next{right:10px;top:50%;transform:translateY(-50%)}
+@media(max-width:600px){.lb button{font-size:1.9rem}}
+
 .closing{background:var(--navy);color:#fff;padding:88px 0;text-align:center}
 .closing h2{color:#fff;margin-bottom:14px}
 .closing p{color:#C9DCF2;max-width:38em;margin:0 auto 30px}
@@ -269,14 +289,14 @@ footer{background:var(--navy-d);color:#fff}
       <div>
         <div class="tagrow">
           <span class="tag-pill">Event Sponsor</span>
-          <span class="tag-pill gold">30 Years Strong</span>
+          <span class="tag-pill gold">Thank You</span>
         </div>
-        <div class="kicker">Welcome to<br/><span>The High Voltage Open</span></div>
-        <h1>OE Utility Services is proud to be the Event Sponsor.</h1>
-        <p class="lede">Find us on the course at the Chipping Contest and the Hydration Station. Enter before you play &mdash; it takes only a moment.</p>
+        <div class="kicker">Thank you for joining us at<br/><span>The High Voltage Open</span></div>
+        <h1>OE Utility Services was proud to be the Event Sponsor.</h1>
+        <p class="lede">A great day at The Quarry Golf Club, with all proceeds going to the Down Syndrome Foundation of Canada. Take a look at the photos below, and don&rsquo;t hesitate to get in touch &mdash; we&rsquo;d be glad to hear from you.</p>
         <div class="btnrow">
-          <a class="btn btn-blue" href="#enter">Enter the Chipping Contest &#8594;</a>
-          <span class="btn btn-ghost">Fun &amp; Prizes</span>
+          <a class="btn btn-blue" href="#gallery">See the photos &#8594;</a>
+          <a class="btn btn-ghost" href="#enter">Contact OE</a>
         </div>
       </div>
       <div class="hero-cards">
@@ -293,12 +313,12 @@ footer{background:var(--navy-d);color:#fff}
   <div class="wrap">
     <div class="welcome-head">
       <div>
-        <div class="eyebrow">Welcome</div>
-        <h2>Good to see you out here.</h2>
+        <div class="eyebrow">Thank you</div>
+        <h2>Thank you for coming out.</h2>
       </div>
       <div class="welcome-lede">
-        <p>OE Utility Services has spent 30 years working across Ontario alongside many of the people on this course today &mdash; contractors, suppliers, utility crews, and the Customers who keep the work coming.</p>
-        <p>A day like this is the easiest way to put names to faces. Come find our team at the Chipping Contest, grab something cold at the Hydration Station, and give the targets a go.</p>
+        <p>OE Utility Services has spent 30 years working across Ontario alongside many of the people who were on the course on Friday &mdash; contractors, suppliers, utility crews, and the Customers who keep the work coming.</p>
+        <p>A day like this is the easiest way to put names to faces. Thank you to everyone who came by and said hello.</p>
       </div>
     </div>
   </div>
@@ -329,29 +349,16 @@ footer{background:var(--navy-d);color:#fff}
   </div>
 </div>
 
-<section class="band-tint">
-  <div class="wrap">
-    <div class="mapcard">
-      <div class="maphead">
-        <div class="eyebrow">Find us on the course</div>
-        <h2>Look for the OE tent</h2>
-        <p>You&rsquo;ll find us between the pond and the cart path. Don&rsquo;t forget to sign up to be eligible for a prize.</p>
-      </div>
-      <img src="/assets/oe-tent-location.jpg" alt="Aerial view of The Quarry Golf Club with the OE Utility Services tent location marked"/>
-    </div>
-  </div>
-</section>
-
-<section id="enter" class="form-band" style="padding-top:0">
+<section id="enter" class="form-band">
   <div class="wrap">
     <div class="form-shell">
       <div class="fh-head">
-        <div class="eyebrow">Enter Here</div>
-        <h2>Chipping Contest Entry</h2>
-        <p>One entry per participant. Under a minute to fill in.</p>
+        <div class="eyebrow">Get in touch</div>
+        <h2>Contact OE Utility Services</h2>
+        <p>Tell us what you need and our sales team will be in touch.</p>
       </div>
 
-      <p class="entry-terms">By entering, you agree to receive our email newsletters and consent to the public announcement of the winner&rsquo;s name and photo.</p>
+      <p class="entry-terms">By submitting this form, you agree to receive email from OE Utility Services. You can unsubscribe at any time.</p>
 
       <form id="entryForm" novalidate>
         <div class="form-grid">
@@ -419,7 +426,7 @@ footer{background:var(--navy-d);color:#fff}
         <input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true"/>
 
         <div class="form-submit">
-          <button id="submitBtn" type="submit">Enter the Chipping Contest</button>
+          <button id="submitBtn" type="submit">Send</button>
         </div>
         <div class="form-msg" id="formMsg" role="status"></div>
       </form>
@@ -449,7 +456,7 @@ footer{background:var(--navy-d);color:#fff}
 <section>
   <div class="wrap">
     <div class="eyebrow">The Tournament</div>
-    <h2 style="margin-bottom:36px">What the day looks like</h2>
+    <h2 style="margin-bottom:36px">How the day ran</h2>
     <div class="tcards">
       <div class="tcard">
         <h3>144+ industry professionals</h3>
@@ -481,12 +488,63 @@ footer{background:var(--navy-d);color:#fff}
   </div>
 </section>
 
+<section id="gallery" class="band-tint">
+  <div class="wrap">
+    <div class="eyebrow">Photos</div>
+    <h2 style="margin-bottom:14px">A look back at the day</h2>
+    <p style="max-width:44em;color:#374764;font-size:1.05rem;margin-bottom:40px">Thank you to everyone who came out to The Quarry Golf Club.</p>
+    <div class="gallery">
+      <a href="/assets/gallery/hvo-01.jpg"><img src="/assets/gallery/hvo-01-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-02.jpg"><img src="/assets/gallery/hvo-02-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-03.jpg"><img src="/assets/gallery/hvo-03-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-04.jpg"><img src="/assets/gallery/hvo-04-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-05.jpg"><img src="/assets/gallery/hvo-05-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-06.jpg"><img src="/assets/gallery/hvo-06-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-07.jpg"><img src="/assets/gallery/hvo-07-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-08.jpg"><img src="/assets/gallery/hvo-08-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-09.jpg"><img src="/assets/gallery/hvo-09-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-10.jpg"><img src="/assets/gallery/hvo-10-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-11.jpg"><img src="/assets/gallery/hvo-11-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-12.jpg"><img src="/assets/gallery/hvo-12-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-13.jpg"><img src="/assets/gallery/hvo-13-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-14.jpg"><img src="/assets/gallery/hvo-14-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-15.jpg"><img src="/assets/gallery/hvo-15-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-16.jpg"><img src="/assets/gallery/hvo-16-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-17.jpg"><img src="/assets/gallery/hvo-17-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-18.jpg"><img src="/assets/gallery/hvo-18-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-19.jpg"><img src="/assets/gallery/hvo-19-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-20.jpg"><img src="/assets/gallery/hvo-20-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-21.jpg"><img src="/assets/gallery/hvo-21-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-22.jpg"><img src="/assets/gallery/hvo-22-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-23.jpg"><img src="/assets/gallery/hvo-23-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-24.jpg"><img src="/assets/gallery/hvo-24-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-25.jpg"><img src="/assets/gallery/hvo-25-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-26.jpg"><img src="/assets/gallery/hvo-26-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-27.jpg"><img src="/assets/gallery/hvo-27-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-28.jpg"><img src="/assets/gallery/hvo-28-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-29.jpg"><img src="/assets/gallery/hvo-29-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-30.jpg"><img src="/assets/gallery/hvo-30-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-31.jpg"><img src="/assets/gallery/hvo-31-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-32.jpg"><img src="/assets/gallery/hvo-32-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-33.jpg"><img src="/assets/gallery/hvo-33-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+      <a href="/assets/gallery/hvo-34.jpg"><img src="/assets/gallery/hvo-34-t.jpg" alt="The High Voltage Open 2026" loading="lazy"/></a>
+    </div>
+  </div>
+</section>
+
+<div class="lb" id="lb" role="dialog" aria-label="Photo viewer">
+  <button class="x" aria-label="Close">&times;</button>
+  <button class="prev" aria-label="Previous">&#8249;</button>
+  <img id="lbimg" alt=""/>
+  <button class="next" aria-label="Next">&#8250;</button>
+</div>
+
 <section class="closing">
   <div class="wrap">
-    <h2>Come say hello.</h2>
-    <p>Our team is on the course all afternoon. Ask us anything &mdash; hydrovac excavation, subsurface utility engineering, restoration, traffic control, soil recycling, or U-Fill.</p>
+    <h2>Get in touch.</h2>
+    <p>Whatever the job &mdash; from hydrovac excavation, to restoration, traffic control, soil recycling, and more &mdash; OE can help.</p>
     <div class="btnrow" style="justify-content:center">
-      <a class="btn btn-blue" href="#enter">Enter the Chipping Contest &#8594;</a>
+      <a class="btn btn-blue" href="#enter">Contact OE &#8594;</a>
       <a class="btn btn-ghost" href="https://www.blackmapleathletics.ca/high-voltage-open" rel="noopener" target="_blank">Tournament website</a>
     </div>
   </div>
@@ -551,7 +609,7 @@ footer{background:var(--navy-d);color:#fff}
 
   function noteText(){
     var n=document.getElementById('notes').value.trim();
-    var stamp='[The High Voltage Open 2026 — OE Chipping Contest entry]';
+    var stamp='[The High Voltage Open 2026 — contact form]';
     return n ? (n + '\n\n' + stamp) : stamp;
   }
 
@@ -593,12 +651,12 @@ footer{background:var(--navy-d);color:#fff}
       fields:fields,
       context:{
         pageUri:window.location.href,
-        pageName:'The High Voltage Open 2026 — Chipping Contest Entry'
+        pageName:'The High Voltage Open 2026 — Contact'
       },
       legalConsentOptions:{
         consent:{
           consentToProcess:true,
-          text:'I agree to OE Utility Services storing and processing my personal data to administer the Chipping Contest.'
+          text:'I agree to OE Utility Services storing and processing my personal data to respond to my enquiry.'
         }
       }
     };
@@ -617,19 +675,42 @@ footer{background:var(--navy-d);color:#fff}
       if(res.ok){
         form.querySelector('.form-grid').style.display='none';
         form.querySelector('.form-submit').style.display='none';
-        show('Thanks for signing up. Here’s to a great event!','ok');
+        show('Thank you for contacting OE Utility Services. Our sales team will be in touch with you!','ok');
       } else {
-        btn.disabled=false; btn.textContent='Enter the Chipping Contest';
+        btn.disabled=false; btn.textContent='Send';
         show('Something went wrong. Please try again, or enter in person at the OE tent.','err');
       }
     })
     .catch(function(){
-      btn.disabled=false; btn.textContent='Enter the Chipping Contest';
+      btn.disabled=false; btn.textContent='Send';
       show('Something went wrong. Please try again, or enter in person at the OE tent.','err');
     });
   });
 })();
 </script>
 
+<script>
+(function(){
+  var lb=document.getElementById('lb'), img=document.getElementById('lbimg');
+  if(!lb) return;
+  var links=[].slice.call(document.querySelectorAll('.gallery a')), i=0;
+  function show(n){ i=(n+links.length)%links.length; img.src=links[i].getAttribute('href'); }
+  links.forEach(function(a,n){ a.addEventListener('click',function(e){
+    e.preventDefault(); show(n); lb.classList.add('open');
+    document.body.style.overflow='hidden';
+  });});
+  function close(){ lb.classList.remove('open'); img.src=''; document.body.style.overflow=''; }
+  lb.querySelector('.x').addEventListener('click',close);
+  lb.querySelector('.prev').addEventListener('click',function(e){e.stopPropagation();show(i-1);});
+  lb.querySelector('.next').addEventListener('click',function(e){e.stopPropagation();show(i+1);});
+  lb.addEventListener('click',function(e){ if(e.target===lb) close(); });
+  document.addEventListener('keydown',function(e){
+    if(!lb.classList.contains('open')) return;
+    if(e.key==='Escape') close();
+    if(e.key==='ArrowLeft') show(i-1);
+    if(e.key==='ArrowRight') show(i+1);
+  });
+})();
+</script>
 </body>
 </html>
